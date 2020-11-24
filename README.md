@@ -10,4 +10,4 @@ $ pip install gym
 $ pip install numpy
 ```
 ##Maintainers
-Evren Alim @apysp
+Evren Alim [https://github.com/apyspo]@apysp
