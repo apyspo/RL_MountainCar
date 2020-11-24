@@ -10,7 +10,7 @@ $ pip install gym
 $ pip install numpy
 ```
 ## Usage
-Run the 
+Run the 'MountainCar.py' loaclly to see the whether the car reachs the flag.
 
 ## Team Member
 Evren Alim, 
