@@ -3,6 +3,7 @@ import gym
 import random
 import time
 import matplotlib.pyplot as plt
+import seaborn as sb
 
 env = gym.make('MountainCar-v0')
 
@@ -94,3 +95,16 @@ for episode in range(3):
         state = new_state
 
 env.close()
+
+solution_policy = np.max(Q_table, axis=2)
+heat_map = sb.heatmap(solution_policy, annot=False)
+plt.xlabel('Velocity')
+plt.ylabel('Position')
+poslist = np.linspace(env.low[0], env.high[0], 20).tolist()
+poslist2 = [str(format(litem, '.2f')) for litem in poslist]
+vellist = np.linspace(env.low[1], env.high[1], 20).tolist()
+vellist2 = [str(format(litem, '.2f')) for litem in vellist]
+heat_map.set_xticklabels(vellist2, rotation=45)
+heat_map.set_yticklabels(poslist2, rotation=45)
+
+plt.savefig('rl.png')
