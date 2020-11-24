@@ -9,5 +9,7 @@ This project uses python3. And the required libraries are 'numpy' and 'gym'. Go 
 $ pip install gym
 $ pip install numpy
 ```
-##Maintainers
-Evren Alim [https://github.com/apyspo]@apysp
+
+## Teammember
+Evren Alim 
+Hongjie Chen
