@@ -9,6 +9,8 @@ This project uses python3. And the required libraries are 'numpy' and 'gym'. Go 
 $ pip install gym
 $ pip install numpy
 ```
+## Usage
+Run the 
 
 ## Team Member
 Evren Alim, 
