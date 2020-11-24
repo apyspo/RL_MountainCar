@@ -11,5 +11,5 @@ $ pip install numpy
 ```
 
 ## Team Member
-Evren Alim 
+Evren Alim \\
 Hongjie Chen
