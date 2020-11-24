@@ -91,7 +91,7 @@ env.close()
 #Visualization
 state_value = np.max(Q_table, axis=2)
 heat_map = sb.heatmap(state_value, annot=False)
-sb.set(font_scale=0.5)
+sb.set(font_scale=0.25)
 plt.xlabel('Velocity')
 plt.ylabel('Position')
 #poslist = np.linspace(env.low[0], env.high[0], 20).tolist()
