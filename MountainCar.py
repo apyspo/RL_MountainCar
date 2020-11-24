@@ -97,16 +97,18 @@ for episode in range(3):
 env.close()
 
 #Visualization
-solution_policy = np.max(Q_table, axis=2)
-heat_map = sb.heatmap(solution_policy, annot=False)
+state_value = np.max(Q_table, axis=2)
+heat_map = sb.heatmap(state_value, annot=False)
+sb.set(font_scale=0.5)
 plt.xlabel('Velocity')
 plt.ylabel('Position')
-poslist = np.linspace(env.low[0], env.high[0], 20).tolist()
-poslist2 = [str(format(litem, '.2f')) for litem in poslist]
-vellist = np.linspace(env.low[1], env.high[1], 20).tolist()
-vellist2 = [str(format(litem, '.2f')) for litem in vellist]
-heat_map.set_xticklabels(vellist2, rotation=45)
-heat_map.set_yticklabels(poslist2, rotation=45)
+#poslist = np.linspace(env.low[0], env.high[0], 20).tolist()
+lpos = [str(format(litem, '.2f')) for litem in np.linspace(env.low[0], env.high[0], 20).tolist()]
+#vellist = np.linspace(env.low[1], env.high[1], 20).tolist()
+lvel = [str(format(litem, '.2f')) for litem in np.linspace(env.low[1], env.high[1], 20).tolist()]
+heat_map.set_yticklabels(lpos, rotation=45)
+heat_map.set_xticklabels(lvel, rotation=45)
+
 plt.show()
 
 
