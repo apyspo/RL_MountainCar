@@ -10,6 +10,6 @@ $ pip install gym
 $ pip install numpy
 ```
 
-## Teammember
+## Team Member
 Evren Alim 
 Hongjie Chen
