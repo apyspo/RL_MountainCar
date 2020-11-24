@@ -82,16 +82,8 @@ for episode in range(3):
         new_state, reward, done, info = env.step(action)
 
         if done:
-
-            env.render()
-            if reward == 0:
-                print("Success!")
-                time.sleep(3)
-            else:
-                print("Fail!")
-                time.sleep(3)
+            time.sleep(3)
             break
-
         state = new_state
 
 env.close()
