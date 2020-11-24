@@ -9,11 +9,5 @@ This project uses python3. And the required libraries are 'numpy' and 'gym'. Go 
 $ pip install gym
 $ pip install numpy
 ```
-
-
-
-The Library:
-import numpy as np
-import gym
-import random
-import matplotlib.pyplot as plt
+##Maintainers
+Evren Alim @apysp
